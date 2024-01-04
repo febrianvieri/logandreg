@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Klinik</title>
+    <!--=============== REMIXICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
+      crossorigin=""
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="regis.css" />
+  </head>
+  <body>
+    <div class="login">
+      <form action="" class="login__form" autocomplete="off">
+        <p class="text">
+          Klinik Pratama <br />
+          Wiwied Arsari
+        </p>
+        <br />
+        <h1 class="login__title">Register</h1>
+
+        <div class="login__inputs">
+          <div class="login__box">
+            <input
+              type="text"
+              placeholder="Nama Pengguna"
+              required
+              autofocus
+              oninvalid="this.setCustomValidity('Ini harus diisi!')"
+              oninput="this.setCustomValidity('')"
+              class="login__input"
+            />
+            <i class="ri-user-fill"></i>
+          </div>
+
+          <div class="login__box">
+            <input
+              type="password"
+              placeholder="Password"
+              required
+              oninvalid="this.setCustomValidity('Ini harus diisi minimal 6 huruf atau angka!')"
+              oninput="this.setCustomValidity('')"
+              class="login__input"
+            />
+            <i class="ri-lock-2-fill"></i>
+          </div>
+
+          <div class="login__box">
+            <select
+              class="login__input2"
+              required
+              oninvalid="this.setCustomValidity('Ini harus diisi!')"
+              oninput="this.setCustomValidity('')"
+            >
+              <option value="" disabled selected>Pilih Pekerjaan</option>
+              <option value="administrasi">Administrasi</option>
+              <option value="dokter">Dokter</option>
+              <option value="farmasi">Farmasi</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="submit" class="login__button">Regis</button>
+
+        <div class="login__register">
+          Sudah punya akun? <a href="../login/login.html">Login</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
