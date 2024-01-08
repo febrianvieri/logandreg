@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Klinik</title>
+    <!--=============== REMIXICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
+      crossorigin=""
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="login">
+      <form action="" class="login__form" autocomplete="off">
+        <img src="../img/logo.png" alt="" class="logo" />
+        <br />
+        <h1 class="login__title">Login</h1>
+
+        <div class="login__inputs">
+          <div class="login__box">
+            <input
+              type="text"
+              placeholder="ID atau NIK Pengguna"
+              required
+              autofocus
+              oninvalid="this.setCustomValidity('Ini harus diisi!')"
+              oninput="this.setCustomValidity('')"
+              class="login__input"
+            />
+            <i class="ri-profile-fill"></i>
+          </div>
+
+          <div class="login__box">
+            <input
+              type="password"
+              placeholder="Password"
+              required
+              oninvalid="this.setCustomValidity('Ini harus diisi!')"
+              oninput="this.setCustomValidity('')"
+              class="login__input"
+            />
+            <i class="ri-lock-2-fill"></i>
+          </div>
+        </div>
+
+        <button type="submit" class="login__button">Login</button>
+
+        <div class="login__register">
+          Tidak punya akun? <a href="regis.html">Register</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
